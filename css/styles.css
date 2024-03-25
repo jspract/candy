@@ -1,0 +1,98 @@
+body {
+    margin: 0px;
+    padding: 0;
+    
+    font-family: 'Shadows Into Light', cursive;
+}
+
+header {
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.image-placeholder {
+    width: 200px;
+    height: 200px;
+    background: #f0f0f0;
+    margin: 0 10px;
+}
+
+footer {
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    padding: 20px;
+    text-align: center;
+}
+
+.get-in-touch {
+    margin-bottom: 20px;
+    
+    
+}
+
+.get-in-touch h2 {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+form input, form button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #ff758c;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ff7eb3;
+}
+
+.text-left-image-right, .image-left-text-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.text-left-image-right .text, .image-left-text-right .text {
+    flex: 1;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.text-left-image-right .image, .image-left-text-right .image {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.image {
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .text-left-image-right, .image-left-text-right {
+        flex-direction: column;
+    }
+
+    .text-left-image-right .text, .image-left-text-right .text, .text-left-image-right .image, .image-left-text-right .image {
+        padding: 20px 0;
+    }
+}
